@@ -29,6 +29,8 @@
     NSDictionary *results = [yql query:queryString];
     NSLog(@"%@",results[@"query"][@"count"]);
     NSLog(@"%@",results[@"query"][@"results"]);
+    NSLog(@"this is a test from my mac pro at home!");
+    
     // Override point for customization after application launch.
     _players = [NSMutableArray arrayWithCapacity:20];
     
