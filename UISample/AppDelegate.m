@@ -30,6 +30,7 @@
     NSLog(@"%@",results[@"query"][@"count"]);
     NSLog(@"%@",results[@"query"][@"results"]);
     
+    NSLog(@"this is a test from macbook air");
     // Override point for customization after application launch.
     _players = [NSMutableArray arrayWithCapacity:20];
     
