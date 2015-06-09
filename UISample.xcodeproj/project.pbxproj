@@ -20,6 +20,8 @@
 		AC49BE4D1B1EBD1300844DE4 /* YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE4C1B1EBD1300844DE4 /* YQL.m */; };
 		AC49BE501B1EC87000844DE4 /* Finder-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE4E1B1EC87000844DE4 /* Finder-icon.png */; };
 		AC49BE511B1EC87000844DE4 /* tab-icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE4F1B1EC87000844DE4 /* tab-icon1.png */; };
+		AC49BE541B267AFB00844DE4 /* news.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE531B267AFB00844DE4 /* news.m */; };
+		AC49BE571B267C3D00844DE4 /* NewsViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE561B267C3D00844DE4 /* NewsViewControllerTableViewController.m */; };
 		ACC6FF011B1D322700374087 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC6FF001B1D322700374087 /* main.m */; };
 		ACC6FF041B1D322700374087 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC6FF031B1D322700374087 /* AppDelegate.m */; };
 		ACC6FF071B1D322700374087 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC6FF061B1D322700374087 /* ViewController.m */; };
@@ -59,6 +61,10 @@
 		AC49BE4C1B1EBD1300844DE4 /* YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YQL.m; path = "yql-ios-master/yql-ios/YQL.m"; sourceTree = "<group>"; };
 		AC49BE4E1B1EC87000844DE4 /* Finder-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Finder-icon.png"; sourceTree = "<group>"; };
 		AC49BE4F1B1EC87000844DE4 /* tab-icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-icon1.png"; sourceTree = "<group>"; };
+		AC49BE521B267AFB00844DE4 /* news.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = news.h; sourceTree = "<group>"; };
+		AC49BE531B267AFB00844DE4 /* news.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = news.m; sourceTree = "<group>"; };
+		AC49BE551B267C3D00844DE4 /* NewsViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewControllerTableViewController.h; sourceTree = "<group>"; };
+		AC49BE561B267C3D00844DE4 /* NewsViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewControllerTableViewController.m; sourceTree = "<group>"; };
 		ACC6FEFB1B1D322700374087 /* UISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC6FEFF1B1D322700374087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC6FF001B1D322700374087 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -129,7 +135,11 @@
 			isa = PBXGroup;
 			children = (
 				AC49BE361B1E949000844DE4 /* PlayersViewControllerTableViewController.h */,
+				AC49BE551B267C3D00844DE4 /* NewsViewControllerTableViewController.h */,
+				AC49BE561B267C3D00844DE4 /* NewsViewControllerTableViewController.m */,
 				AC49BE371B1E949000844DE4 /* PlayersViewControllerTableViewController.m */,
+				AC49BE521B267AFB00844DE4 /* news.h */,
+				AC49BE531B267AFB00844DE4 /* news.m */,
 				ACC6FF021B1D322700374087 /* AppDelegate.h */,
 				ACC6FF031B1D322700374087 /* AppDelegate.m */,
 				ACC6FF051B1D322700374087 /* ViewController.h */,
@@ -307,6 +317,8 @@
 				ACC6FF071B1D322700374087 /* ViewController.m in Sources */,
 				ACC6FF041B1D322700374087 /* AppDelegate.m in Sources */,
 				ACC6FF011B1D322700374087 /* main.m in Sources */,
+				AC49BE541B267AFB00844DE4 /* news.m in Sources */,
+				AC49BE571B267C3D00844DE4 /* NewsViewControllerTableViewController.m in Sources */,
 				AC49BE381B1E949000844DE4 /* PlayersViewControllerTableViewController.m in Sources */,
 				AC49BE3B1B1E985700844DE4 /* Player.m in Sources */,
 			);
