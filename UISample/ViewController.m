@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "YQL.h"
+#import "PlayersViewControllerTableViewController.h"
 
 
 @interface ViewController ()
@@ -18,6 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    PlayersViewControllerTableViewController *pvc = [[PlayersViewControllerTableViewController alloc] init];
+    
+    [self.view addSubview:pvc];
+    
     // Do any additional setup after loading the view, typically from a nib.
 //    
 //    int (^calcTimes)(int, int) = ^(int num1, int num2) {
@@ -43,7 +48,6 @@
 //    
 //    
 //    NSLog(@"result is %i %i %i %i ",result,result2,result3,result4);
-    
 
 }
 
