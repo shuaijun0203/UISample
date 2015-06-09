@@ -11,7 +11,6 @@
 @interface news : NSObject
 @property (nonatomic, copy) NSString *newsIcon;
 @property (nonatomic, copy) NSString *newsURL;
-@property (nonatomic, copy) NSString *newsDescription;
 @property (nonatomic, copy) NSString *newsTitle;
 @property (nonatomic, assign) NSDate *pubDate;
 @end
