@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "Player.h"
 #import "PlayersViewControllerTableViewController.h"
+#import "NewsViewControllerTableViewController.h"
+#import "news.h"
 #import "YQL.h"
 
 @interface AppDelegate ()
@@ -17,7 +19,9 @@
 
 @implementation AppDelegate
 
-     NSMutableArray *_players;
+    NSMutableArray *_players;
+    NSMutableArray *_newsArray;
+
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -27,10 +31,42 @@
     NSString *queryString = @"select * from feed where url='http://rss.news.yahoo.com/rss/topstories'";
     
     NSDictionary *results = [yql query:queryString];
-    NSLog(@"%@",results[@"query"][@"count"]);
-    NSLog(@"%@",results[@"query"][@"results"]);
     
-    NSLog(@"this is a test from macbook air");
+    NSDictionary *contents = results[@"query"][@"results"][@"item"][3][@"content"];
+    NSString *url = [contents objectForKey:@"url"];
+    
+    NSInteger newsCount = results.count;
+    _newsArray = [NSMutableArray arrayWithCapacity:newsCount];
+    
+//    NSLog(@"%@",results[@"query"][@"results"][@"item"][1][@"content"]);
+//    
+    NSLog(@"$$$$$$ %@",results[@"query"][@"results"][@"item"][0][@"link"]);
+//    NSLog(@"%@",results[@"query"][@"results"][@"item"][1][@"pubDate"]);
+//    NSLog(@"%@",results[@"query"][@"results"][@"item"][1][@"title"]);
+//    NSLog(@"%@",results[@"query"][@"results"][@"item"][1][@"description"]);
+    news *newsModel = [[news alloc] init];
+
+    for (int i = 0; i <= 39; i++) {
+        NSLog(@"news Title is %@ %i",results[@"query"][@"results"][@"item"][i][@"title"],i);
+        newsModel.newsTitle = results[@"query"][@"results"][@"item"][i][@"title"];
+        newsModel.newsURL = results[@"query"][@"results"][@"item"][i][@"link"];
+        
+        NSString *dateString = results[@"query"][@"results"][@"item"][1][@"pubDate"];
+        NSDateFormatter *df = [[NSDateFormatter alloc] init];
+        [df setDateFormat:@"yyyy-MM-dd HH:mm:ss a"];
+        NSDate *pubDate = [df dateFromString: dateString];
+        newsModel.pubDate = pubDate;
+    }
+    
+    [_newsArray addObject:newsModel];
+    
+    //newsModel.newsIcon =
+//    NSString *contents = results[@"query"][@"results"][@"item"][1][@"content"][@"url"];
+    //NSArray *contentsArray = [contents componentsSeparatedByString:@";"];
+    //NSLog(@"%lu",(unsigned long)contentsArray.count);
+    
+
+    //NSLog(contentsArray);
     // Override point for customization after application launch.
     _players = [NSMutableArray arrayWithCapacity:20];
     
@@ -54,8 +90,11 @@
     
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     UINavigationController *navigationController = [tabBarController viewControllers][0];
+    
     PlayersViewControllerTableViewController *playersViewController = [navigationController viewControllers][0];
     playersViewController.players = _players;
+//    NewsViewControllerTableViewController *newsViewController = [navigationController viewControllers][0];
+//    newsViewController.newsArray = _newsArray;
     return YES;
 }
 
