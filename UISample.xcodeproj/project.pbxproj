@@ -20,12 +20,14 @@
 		AC49BE4D1B1EBD1300844DE4 /* YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE4C1B1EBD1300844DE4 /* YQL.m */; };
 		AC49BE501B1EC87000844DE4 /* Finder-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE4E1B1EC87000844DE4 /* Finder-icon.png */; };
 		AC49BE511B1EC87000844DE4 /* tab-icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE4F1B1EC87000844DE4 /* tab-icon1.png */; };
-		AC49BE541B267AFB00844DE4 /* news.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE531B267AFB00844DE4 /* news.m */; };
+		AC49BE541B267AFB00844DE4 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE531B267AFB00844DE4 /* News.m */; };
 		AC49BE571B267C3D00844DE4 /* NewsViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE561B267C3D00844DE4 /* NewsViewControllerTableViewController.m */; };
+		AC49BE5D1B27DF7500844DE4 /* Finder-icon-120.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE5C1B27DF7500844DE4 /* Finder-icon-120.jpg */; };
+		AC49BE661B27FA3B00844DE4 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE641B27FA3B00844DE4 /* NewsDetailViewController.m */; };
+		AC49BE691B28003900844DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE681B28003900844DE4 /* Main.storyboard */; };
 		ACC6FF011B1D322700374087 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC6FF001B1D322700374087 /* main.m */; };
 		ACC6FF041B1D322700374087 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC6FF031B1D322700374087 /* AppDelegate.m */; };
 		ACC6FF071B1D322700374087 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC6FF061B1D322700374087 /* ViewController.m */; };
-		ACC6FF0A1B1D322700374087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC6FF081B1D322700374087 /* Main.storyboard */; };
 		ACC6FF0C1B1D322700374087 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC6FF0B1B1D322700374087 /* Images.xcassets */; };
 		ACC6FF0F1B1D322700374087 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC6FF0D1B1D322700374087 /* LaunchScreen.xib */; };
 		ACC6FF1B1B1D322700374087 /* UISampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC6FF1A1B1D322700374087 /* UISampleTests.m */; };
@@ -61,10 +63,14 @@
 		AC49BE4C1B1EBD1300844DE4 /* YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YQL.m; path = "yql-ios-master/yql-ios/YQL.m"; sourceTree = "<group>"; };
 		AC49BE4E1B1EC87000844DE4 /* Finder-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Finder-icon.png"; sourceTree = "<group>"; };
 		AC49BE4F1B1EC87000844DE4 /* tab-icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-icon1.png"; sourceTree = "<group>"; };
-		AC49BE521B267AFB00844DE4 /* news.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = news.h; sourceTree = "<group>"; };
-		AC49BE531B267AFB00844DE4 /* news.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = news.m; sourceTree = "<group>"; };
+		AC49BE521B267AFB00844DE4 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		AC49BE531B267AFB00844DE4 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		AC49BE551B267C3D00844DE4 /* NewsViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewControllerTableViewController.h; sourceTree = "<group>"; };
 		AC49BE561B267C3D00844DE4 /* NewsViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewControllerTableViewController.m; sourceTree = "<group>"; };
+		AC49BE5C1B27DF7500844DE4 /* Finder-icon-120.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Finder-icon-120.jpg"; sourceTree = "<group>"; };
+		AC49BE631B27FA3B00844DE4 /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
+		AC49BE641B27FA3B00844DE4 /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
+		AC49BE681B28003900844DE4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ACC6FEFB1B1D322700374087 /* UISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC6FEFF1B1D322700374087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC6FF001B1D322700374087 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,7 +78,6 @@
 		ACC6FF031B1D322700374087 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ACC6FF051B1D322700374087 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		ACC6FF061B1D322700374087 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		ACC6FF091B1D322700374087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACC6FF0B1B1D322700374087 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ACC6FF0E1B1D322700374087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ACC6FF141B1D322700374087 /* UISampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UISampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,18 +143,20 @@
 				AC49BE551B267C3D00844DE4 /* NewsViewControllerTableViewController.h */,
 				AC49BE561B267C3D00844DE4 /* NewsViewControllerTableViewController.m */,
 				AC49BE371B1E949000844DE4 /* PlayersViewControllerTableViewController.m */,
-				AC49BE521B267AFB00844DE4 /* news.h */,
-				AC49BE531B267AFB00844DE4 /* news.m */,
+				AC49BE521B267AFB00844DE4 /* News.h */,
+				AC49BE531B267AFB00844DE4 /* News.m */,
 				ACC6FF021B1D322700374087 /* AppDelegate.h */,
 				ACC6FF031B1D322700374087 /* AppDelegate.m */,
 				ACC6FF051B1D322700374087 /* ViewController.h */,
 				ACC6FF061B1D322700374087 /* ViewController.m */,
-				ACC6FF081B1D322700374087 /* Main.storyboard */,
 				ACC6FF0B1B1D322700374087 /* Images.xcassets */,
+				AC49BE681B28003900844DE4 /* Main.storyboard */,
 				ACC6FF0D1B1D322700374087 /* LaunchScreen.xib */,
 				ACC6FEFE1B1D322700374087 /* Supporting Files */,
 				AC49BE391B1E985700844DE4 /* Player.h */,
 				AC49BE3A1B1E985700844DE4 /* Player.m */,
+				AC49BE631B27FA3B00844DE4 /* NewsDetailViewController.h */,
+				AC49BE641B27FA3B00844DE4 /* NewsDetailViewController.m */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 		ACC6FF561B1D3C5900374087 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				AC49BE5C1B27DF7500844DE4 /* Finder-icon-120.jpg */,
 				AC49BE4E1B1EC87000844DE4 /* Finder-icon.png */,
 				AC49BE4F1B1EC87000844DE4 /* tab-icon1.png */,
 				AC49BE3C1B1EA91100844DE4 /* half-star.png */,
@@ -280,12 +288,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACC6FF0A1B1D322700374087 /* Main.storyboard in Resources */,
+				AC49BE5D1B27DF7500844DE4 /* Finder-icon-120.jpg in Resources */,
 				AC49BE501B1EC87000844DE4 /* Finder-icon.png in Resources */,
 				AC49BE491B1EBB8B00844DE4 /* yql-ios-master in Resources */,
 				AC49BE331B1D66A400844DE4 /* myApp.png in Resources */,
 				AC49BE431B1EA91100844DE4 /* 2-stars.png in Resources */,
 				AC49BE471B1EA91100844DE4 /* 3-stars.png in Resources */,
+				AC49BE691B28003900844DE4 /* Main.storyboard in Resources */,
 				ACC6FF591B1D3C6E00374087 /* dogs-667919_1280.jpg in Resources */,
 				AC49BE441B1EA91100844DE4 /* 4-stars.png in Resources */,
 				AC49BE451B1EA91100844DE4 /* 5-stars.jpg in Resources */,
@@ -317,9 +326,10 @@
 				ACC6FF071B1D322700374087 /* ViewController.m in Sources */,
 				ACC6FF041B1D322700374087 /* AppDelegate.m in Sources */,
 				ACC6FF011B1D322700374087 /* main.m in Sources */,
-				AC49BE541B267AFB00844DE4 /* news.m in Sources */,
+				AC49BE541B267AFB00844DE4 /* News.m in Sources */,
 				AC49BE571B267C3D00844DE4 /* NewsViewControllerTableViewController.m in Sources */,
 				AC49BE381B1E949000844DE4 /* PlayersViewControllerTableViewController.m in Sources */,
+				AC49BE661B27FA3B00844DE4 /* NewsDetailViewController.m in Sources */,
 				AC49BE3B1B1E985700844DE4 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ACC6FF081B1D322700374087 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACC6FF091B1D322700374087 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ACC6FF0D1B1D322700374087 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
