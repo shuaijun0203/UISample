@@ -29,15 +29,38 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    //Add a left swipe gesture recognizer
+    UISwipeGestureRecognizer *recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self
+                                                                                     action:@selector(handleSwipeLeft:)];
+    [recognizer setDirection:(UISwipeGestureRecognizerDirectionLeft)];
+    [self.tableView addGestureRecognizer:recognizer];
+    
+    //Add a right swipe gesture recognizer
+    recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self
+                                                           action:@selector(handleSwipeRight:)];
+    [recognizer setDirection:(UISwipeGestureRecognizerDirectionRight)];
+    [self.tableView addGestureRecognizer:recognizer];
+    
+    //Add a UP swipe gesture recognizer
+    recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self
+                                                           action:@selector(handleSwipeUp:)];
+    [recognizer setDirection:(UISwipeGestureRecognizerDirectionUp)];
+    [self.tableView addGestureRecognizer:recognizer];
+    
+    //Add a DOWN swipe gesture recognizer
+    recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self
+                                                           action:@selector(handleSwipeDown:)];
+    [recognizer setDirection:(UISwipeGestureRecognizerDirectionDown)];
+    [self.tableView addGestureRecognizer:recognizer];
+    
     //        YAHOO json parse TEST!!!
     YQL *yql = [[YQL alloc] init];
     NSString *queryString = @"select * from feed where url='http://rss.news.yahoo.com/rss/topstories'";
     
     NSDictionary *results = [yql query:queryString];
-    
     NSInteger newsCount = results.count;
     
-//    NSLog(@"%@",results[@"query"][@"results"][@"item"][0]);
     _newsArray = [NSMutableArray arrayWithCapacity:newsCount];
     for (int i = 0; i <= 39; i++) {
         News *newsModel = [[News alloc] init];
@@ -71,8 +94,11 @@
 
         newsModel.newsImage = newImageURL;
         newsModel.newsIcon = iconURL;
-        newsModel.newsSource = @"Associated Press";
+        NSDictionary *sourceDic = results[@"query"][@"results"][@"item"][i][@"source"];
+        NSString *source = [sourceDic objectForKey:@"content"];
+        newsModel.newsSource = source;
         [_newsArray addObject:newsModel];
+        NSLog(@" %@",newsModel.newsIcon);
         
     }
     // Override point for customization after application launch.
@@ -90,17 +116,66 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)handleSwipeLeft:(UISwipeGestureRecognizer *)gestureRecognizer
+{
+    //Get location of the swipe
+    CGPoint location = [gestureRecognizer locationInView:self.tableView];
+    
+    //Get the corresponding index path within the table view
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:location];
+    
+    //Check if index path is valid
+    if(indexPath)
+    {
+        //Get the cell out of the table view
+        UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+        
+        //Update the cell or model
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+}
+
+
+- (void)handleSwipeRight:(UISwipeGestureRecognizer *)gestureRecognizer
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"AlertView"
+                                                        message:@"iOS7"
+                                                       delegate:self
+                                              cancelButtonTitle:@"いいえ"
+                                              otherButtonTitles:@"はい", nil];
+    [alertView show];
+}
+
+//- (void)handleSwipeUp:(UISwipeGestureRecognizer *)gestureRecognizer
+//{
+//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"AlertView"
+//                                                        message:@"iOS7"
+//                                                       delegate:self
+//                                              cancelButtonTitle:@"いいえ"
+//                                              otherButtonTitles:@"はい", nil];
+//    [alertView show];
+//}
+//
+//- (void)handleSwipeDown:(UISwipeGestureRecognizer *)gestureRecognizer
+//{
+//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"AlertView"
+//                                                        message:@"iOS7"
+//                                                       delegate:self
+//                                              cancelButtonTitle:@"いいえ"
+//                                              otherButtonTitles:@"はい", nil];
+//    [alertView show];
+//}
+
+
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UIAlertView *messageAlert = [[UIAlertView alloc]
                                  initWithTitle:@"Row Selected" message:@"You've selected a row" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-
-    NSLog(@"The News is %@",[newsArray[indexPath.row] newsTitle]);
-    
     
     // Display Alert Message
     //[messageAlert show];
-    
 }
 
 
@@ -116,7 +191,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 14;
+    return 40;
 }
 
 
@@ -126,10 +201,8 @@
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-//    if ( cell == nil )
-//    {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-//    }
+    if(cell == nil) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+
     
     News *news = (self.newsArray)[indexPath.row];
     cell.textLabel.text = news.newsTitle;
@@ -142,15 +215,37 @@
     
     NSURL *url = [NSURL URLWithString:news.newsIcon];
     NSData *data = [NSData dataWithContentsOfURL:url];
-    //UIImage *img = [[UIImage alloc] initWithData:data];
-    
     cell.imageView.image = [UIImage imageWithData:data];
     return cell;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
     if ([segue.identifier isEqualToString:@"showNewsDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NewsDetailViewController *newsDVC = [segue destinationViewController];
+        newsDVC.newsModel = newsArray[indexPath.row];
+    }
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat height = scrollView.frame.size.height;
+    
+    CGFloat contentYoffset = scrollView.contentOffset.y;
+    
+    CGFloat distanceFromBottom = scrollView.contentSize.height - contentYoffset;
+    
+    if(distanceFromBottom < height)
+    {
+        
+//        UILabel* label = [[UILabel alloc] init];
+//        [label setText: @"My Label"];
+//        [label setTextColor: [UIColor orangeColor]];
+//        [self.tableView addSubview: label];
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wait" message:@"Are you sure you want to delete this.  This action cannot be undone" delegate:self cancelButtonTitle:@"Delete" otherButtonTitles:@"Cancel", nil];
+//        [alert show];
+        
     }
 }
 

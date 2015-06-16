@@ -7,22 +7,56 @@
 //
 
 #import "NewsDetailViewController.h"
+#import "NewsWebViewController.h"
 
 @interface NewsDetailViewController ()
 
 @end
 
 @implementation NewsDetailViewController
-@synthesize news;
+
+@synthesize newsModel;
 @synthesize newsDate;
 @synthesize newsTitle;
 @synthesize newsSource;
+@synthesize newsImage;
+@synthesize newsContents;
+
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    newsTitle.text = newsModel.newsTitle;
+    newsDate.text = newsModel.pubDate;
+    newsSource.text = newsModel.newsSource;
+    newsContents.text = newsModel.newsContents;
+    NSURL *imageURL = [NSURL URLWithString:newsModel.newsImage];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // Update the UI
+            newsImage.image = [UIImage imageWithData:imageData];
+        });
+    });
+    
+}
+
+- (IBAction)readMoreButton:(id)sender{
+    
+//    NewsWebViewController *newsWVC =
+//    [self performSegueWithIdentifier:@"NewsWeb" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"NewsWeb"]) {
+
+        NewsWebViewController *newsWVC = [segue destinationViewController];
+        newsWVC.newsURL = self.newsModel.newsURL;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,9 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface news : NSObject
+@interface News : NSObject
 @property (nonatomic, copy) NSString *newsIcon;
+@property (nonatomic, copy,nullable) NSString *newsImage;
 @property (nonatomic, copy) NSString *newsURL;
 @property (nonatomic, copy) NSString *newsTitle;
-@property (nonatomic, assign) NSDate *pubDate;
+@property (nonatomic, copy) NSString *pubDate;
+@property (nonatomic, copy) NSString *newsSource;
+@property (nonatomic, copy) NSString *newsContents;
+
+
+
 @end

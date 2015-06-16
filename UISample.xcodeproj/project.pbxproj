@@ -25,6 +25,8 @@
 		AC49BE5D1B27DF7500844DE4 /* Finder-icon-120.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE5C1B27DF7500844DE4 /* Finder-icon-120.jpg */; };
 		AC49BE661B27FA3B00844DE4 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE641B27FA3B00844DE4 /* NewsDetailViewController.m */; };
 		AC49BE691B28003900844DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE681B28003900844DE4 /* Main.storyboard */; };
+		AC49BE6C1B2A697300844DE4 /* NewsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE6B1B2A697300844DE4 /* NewsWebViewController.m */; };
+		AC7EEF401B2AA99B002456E5 /* FlipClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7EEF3F1B2AA99B002456E5 /* FlipClockViewController.m */; };
 		ACC6FF011B1D322700374087 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC6FF001B1D322700374087 /* main.m */; };
 		ACC6FF041B1D322700374087 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC6FF031B1D322700374087 /* AppDelegate.m */; };
 		ACC6FF071B1D322700374087 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC6FF061B1D322700374087 /* ViewController.m */; };
@@ -71,6 +73,10 @@
 		AC49BE631B27FA3B00844DE4 /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
 		AC49BE641B27FA3B00844DE4 /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
 		AC49BE681B28003900844DE4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AC49BE6A1B2A697300844DE4 /* NewsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsWebViewController.h; sourceTree = "<group>"; };
+		AC49BE6B1B2A697300844DE4 /* NewsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsWebViewController.m; sourceTree = "<group>"; };
+		AC7EEF3E1B2AA99B002456E5 /* FlipClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipClockViewController.h; sourceTree = "<group>"; };
+		AC7EEF3F1B2AA99B002456E5 /* FlipClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipClockViewController.m; sourceTree = "<group>"; };
 		ACC6FEFB1B1D322700374087 /* UISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC6FEFF1B1D322700374087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC6FF001B1D322700374087 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -139,12 +145,20 @@
 		ACC6FEFD1B1D322700374087 /* UISample */ = {
 			isa = PBXGroup;
 			children = (
-				AC49BE361B1E949000844DE4 /* PlayersViewControllerTableViewController.h */,
 				AC49BE551B267C3D00844DE4 /* NewsViewControllerTableViewController.h */,
 				AC49BE561B267C3D00844DE4 /* NewsViewControllerTableViewController.m */,
+				AC49BE361B1E949000844DE4 /* PlayersViewControllerTableViewController.h */,
 				AC49BE371B1E949000844DE4 /* PlayersViewControllerTableViewController.m */,
+				AC49BE631B27FA3B00844DE4 /* NewsDetailViewController.h */,
+				AC49BE641B27FA3B00844DE4 /* NewsDetailViewController.m */,
+				AC49BE6A1B2A697300844DE4 /* NewsWebViewController.h */,
+				AC49BE6B1B2A697300844DE4 /* NewsWebViewController.m */,
+				AC7EEF3E1B2AA99B002456E5 /* FlipClockViewController.h */,
+				AC7EEF3F1B2AA99B002456E5 /* FlipClockViewController.m */,
 				AC49BE521B267AFB00844DE4 /* News.h */,
 				AC49BE531B267AFB00844DE4 /* News.m */,
+				AC49BE391B1E985700844DE4 /* Player.h */,
+				AC49BE3A1B1E985700844DE4 /* Player.m */,
 				ACC6FF021B1D322700374087 /* AppDelegate.h */,
 				ACC6FF031B1D322700374087 /* AppDelegate.m */,
 				ACC6FF051B1D322700374087 /* ViewController.h */,
@@ -153,10 +167,6 @@
 				AC49BE681B28003900844DE4 /* Main.storyboard */,
 				ACC6FF0D1B1D322700374087 /* LaunchScreen.xib */,
 				ACC6FEFE1B1D322700374087 /* Supporting Files */,
-				AC49BE391B1E985700844DE4 /* Player.h */,
-				AC49BE3A1B1E985700844DE4 /* Player.m */,
-				AC49BE631B27FA3B00844DE4 /* NewsDetailViewController.h */,
-				AC49BE641B27FA3B00844DE4 /* NewsDetailViewController.m */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -324,6 +334,8 @@
 			files = (
 				AC49BE4D1B1EBD1300844DE4 /* YQL.m in Sources */,
 				ACC6FF071B1D322700374087 /* ViewController.m in Sources */,
+				AC49BE6C1B2A697300844DE4 /* NewsWebViewController.m in Sources */,
+				AC7EEF401B2AA99B002456E5 /* FlipClockViewController.m in Sources */,
 				ACC6FF041B1D322700374087 /* AppDelegate.m in Sources */,
 				ACC6FF011B1D322700374087 /* main.m in Sources */,
 				AC49BE541B267AFB00844DE4 /* News.m in Sources */,

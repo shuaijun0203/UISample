@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewsViewControllerTableViewController : UITableViewController
+@interface NewsViewControllerTableViewController : UITableViewController<UITableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *newsArray;
 

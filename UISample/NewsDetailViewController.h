@@ -7,12 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "News.h"
 
 @interface NewsDetailViewController : UIViewController
-@property (nonatomic, strong) NSMutableArray *newsTitle;
-@property (nonatomic, strong) NSMutableArray *newsDate;
-@property (nonatomic, strong) NSMutableArray *news;
-@property (nonatomic, strong) NSMutableArray *newsSource;
+@property (weak,nonatomic) News *newsModel;
+@property (weak, nonatomic) IBOutlet UILabel *newsTitle;
+@property (weak, nonatomic) IBOutlet UILabel *newsSource;
+@property (weak, nonatomic) IBOutlet UILabel *newsDate;
+@property (weak, nonatomic) IBOutlet UIImageView *newsImage;
+@property (weak, nonatomic) IBOutlet UITextView *newsContents;
+- (IBAction)readMoreButton:(id)sender;
+
 
 
 @end
