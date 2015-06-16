@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AC49BE331B1D66A400844DE4 /* myApp.png in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE321B1D66A400844DE4 /* myApp.png */; };
-		AC49BE381B1E949000844DE4 /* PlayersViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE371B1E949000844DE4 /* PlayersViewControllerTableViewController.m */; };
-		AC49BE3B1B1E985700844DE4 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE3A1B1E985700844DE4 /* Player.m */; };
 		AC49BE491B1EBB8B00844DE4 /* yql-ios-master in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE481B1EBB8B00844DE4 /* yql-ios-master */; };
 		AC49BE4D1B1EBD1300844DE4 /* YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE4C1B1EBD1300844DE4 /* YQL.m */; };
 		AC49BE541B267AFB00844DE4 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE531B267AFB00844DE4 /* News.m */; };
@@ -39,10 +37,6 @@
 
 /* Begin PBXFileReference section */
 		AC49BE321B1D66A400844DE4 /* myApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myApp.png; sourceTree = "<group>"; };
-		AC49BE361B1E949000844DE4 /* PlayersViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayersViewControllerTableViewController.h; path = ../PlayersViewControllerTableViewController.h; sourceTree = "<group>"; };
-		AC49BE371B1E949000844DE4 /* PlayersViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayersViewControllerTableViewController.m; path = ../PlayersViewControllerTableViewController.m; sourceTree = "<group>"; };
-		AC49BE391B1E985700844DE4 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		AC49BE3A1B1E985700844DE4 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		AC49BE481B1EBB8B00844DE4 /* yql-ios-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "yql-ios-master"; sourceTree = "<group>"; };
 		AC49BE4B1B1EBD1300844DE4 /* YQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YQL.h; path = "yql-ios-master/yql-ios/YQL.h"; sourceTree = "<group>"; };
 		AC49BE4C1B1EBD1300844DE4 /* YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YQL.m; path = "yql-ios-master/yql-ios/YQL.m"; sourceTree = "<group>"; };
@@ -125,8 +119,6 @@
 			children = (
 				AC49BE551B267C3D00844DE4 /* NewsViewControllerTableViewController.h */,
 				AC49BE561B267C3D00844DE4 /* NewsViewControllerTableViewController.m */,
-				AC49BE361B1E949000844DE4 /* PlayersViewControllerTableViewController.h */,
-				AC49BE371B1E949000844DE4 /* PlayersViewControllerTableViewController.m */,
 				AC49BE631B27FA3B00844DE4 /* NewsDetailViewController.h */,
 				AC49BE641B27FA3B00844DE4 /* NewsDetailViewController.m */,
 				AC49BE6A1B2A697300844DE4 /* NewsWebViewController.h */,
@@ -135,8 +127,6 @@
 				AC7EEF3F1B2AA99B002456E5 /* FlipClockViewController.m */,
 				AC49BE521B267AFB00844DE4 /* News.h */,
 				AC49BE531B267AFB00844DE4 /* News.m */,
-				AC49BE391B1E985700844DE4 /* Player.h */,
-				AC49BE3A1B1E985700844DE4 /* Player.m */,
 				ACC6FF021B1D322700374087 /* AppDelegate.h */,
 				ACC6FF031B1D322700374087 /* AppDelegate.m */,
 				ACC6FF051B1D322700374087 /* ViewController.h */,
@@ -296,9 +286,7 @@
 				ACC6FF011B1D322700374087 /* main.m in Sources */,
 				AC49BE541B267AFB00844DE4 /* News.m in Sources */,
 				AC49BE571B267C3D00844DE4 /* NewsViewControllerTableViewController.m in Sources */,
-				AC49BE381B1E949000844DE4 /* PlayersViewControllerTableViewController.m in Sources */,
 				AC49BE661B27FA3B00844DE4 /* NewsDetailViewController.m in Sources */,
-				AC49BE3B1B1E985700844DE4 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
