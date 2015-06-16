@@ -8,21 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AC49BE331B1D66A400844DE4 /* myApp.png in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE321B1D66A400844DE4 /* myApp.png */; };
-		AC49BE351B1E93FB00844DE4 /* NBA_Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE341B1E93FB00844DE4 /* NBA_Logo.jpg */; };
 		AC49BE381B1E949000844DE4 /* PlayersViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE371B1E949000844DE4 /* PlayersViewControllerTableViewController.m */; };
 		AC49BE3B1B1E985700844DE4 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE3A1B1E985700844DE4 /* Player.m */; };
-		AC49BE421B1EA91100844DE4 /* half-star.png in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE3C1B1EA91100844DE4 /* half-star.png */; };
-		AC49BE431B1EA91100844DE4 /* 2-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE3D1B1EA91100844DE4 /* 2-stars.png */; };
-		AC49BE441B1EA91100844DE4 /* 4-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE3E1B1EA91100844DE4 /* 4-stars.png */; };
-		AC49BE451B1EA91100844DE4 /* 5-stars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE3F1B1EA91100844DE4 /* 5-stars.jpg */; };
-		AC49BE471B1EA91100844DE4 /* 3-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE411B1EA91100844DE4 /* 3-stars.png */; };
 		AC49BE491B1EBB8B00844DE4 /* yql-ios-master in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE481B1EBB8B00844DE4 /* yql-ios-master */; };
 		AC49BE4D1B1EBD1300844DE4 /* YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE4C1B1EBD1300844DE4 /* YQL.m */; };
-		AC49BE501B1EC87000844DE4 /* Finder-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE4E1B1EC87000844DE4 /* Finder-icon.png */; };
-		AC49BE511B1EC87000844DE4 /* tab-icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE4F1B1EC87000844DE4 /* tab-icon1.png */; };
 		AC49BE541B267AFB00844DE4 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE531B267AFB00844DE4 /* News.m */; };
 		AC49BE571B267C3D00844DE4 /* NewsViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE561B267C3D00844DE4 /* NewsViewControllerTableViewController.m */; };
-		AC49BE5D1B27DF7500844DE4 /* Finder-icon-120.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE5C1B27DF7500844DE4 /* Finder-icon-120.jpg */; };
 		AC49BE661B27FA3B00844DE4 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE641B27FA3B00844DE4 /* NewsDetailViewController.m */; };
 		AC49BE691B28003900844DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC49BE681B28003900844DE4 /* Main.storyboard */; };
 		AC49BE6C1B2A697300844DE4 /* NewsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE6B1B2A697300844DE4 /* NewsWebViewController.m */; };
@@ -33,8 +24,6 @@
 		ACC6FF0C1B1D322700374087 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC6FF0B1B1D322700374087 /* Images.xcassets */; };
 		ACC6FF0F1B1D322700374087 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC6FF0D1B1D322700374087 /* LaunchScreen.xib */; };
 		ACC6FF1B1B1D322700374087 /* UISampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC6FF1A1B1D322700374087 /* UISampleTests.m */; };
-		ACC6FF591B1D3C6E00374087 /* dogs-667919_1280.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACC6FF571B1D3C6E00374087 /* dogs-667919_1280.jpg */; };
-		ACC6FF5A1B1D3C6E00374087 /* tabby-114782_1920.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACC6FF581B1D3C6E00374087 /* tabby-114782_1920.jpg */; };
 		ACC6FF5C1B1D46E300374087 /* black_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACC6FF5B1B1D46E300374087 /* black_back.jpg */; };
 /* End PBXBuildFile section */
 
@@ -50,26 +39,17 @@
 
 /* Begin PBXFileReference section */
 		AC49BE321B1D66A400844DE4 /* myApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myApp.png; sourceTree = "<group>"; };
-		AC49BE341B1E93FB00844DE4 /* NBA_Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NBA_Logo.jpg; sourceTree = "<group>"; };
 		AC49BE361B1E949000844DE4 /* PlayersViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayersViewControllerTableViewController.h; path = ../PlayersViewControllerTableViewController.h; sourceTree = "<group>"; };
 		AC49BE371B1E949000844DE4 /* PlayersViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayersViewControllerTableViewController.m; path = ../PlayersViewControllerTableViewController.m; sourceTree = "<group>"; };
 		AC49BE391B1E985700844DE4 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		AC49BE3A1B1E985700844DE4 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		AC49BE3C1B1EA91100844DE4 /* half-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "half-star.png"; sourceTree = "<group>"; };
-		AC49BE3D1B1EA91100844DE4 /* 2-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-stars.png"; sourceTree = "<group>"; };
-		AC49BE3E1B1EA91100844DE4 /* 4-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-stars.png"; sourceTree = "<group>"; };
-		AC49BE3F1B1EA91100844DE4 /* 5-stars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5-stars.jpg"; sourceTree = "<group>"; };
-		AC49BE411B1EA91100844DE4 /* 3-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-stars.png"; sourceTree = "<group>"; };
 		AC49BE481B1EBB8B00844DE4 /* yql-ios-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "yql-ios-master"; sourceTree = "<group>"; };
 		AC49BE4B1B1EBD1300844DE4 /* YQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YQL.h; path = "yql-ios-master/yql-ios/YQL.h"; sourceTree = "<group>"; };
 		AC49BE4C1B1EBD1300844DE4 /* YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YQL.m; path = "yql-ios-master/yql-ios/YQL.m"; sourceTree = "<group>"; };
-		AC49BE4E1B1EC87000844DE4 /* Finder-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Finder-icon.png"; sourceTree = "<group>"; };
-		AC49BE4F1B1EC87000844DE4 /* tab-icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-icon1.png"; sourceTree = "<group>"; };
 		AC49BE521B267AFB00844DE4 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		AC49BE531B267AFB00844DE4 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		AC49BE551B267C3D00844DE4 /* NewsViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewControllerTableViewController.h; sourceTree = "<group>"; };
 		AC49BE561B267C3D00844DE4 /* NewsViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewControllerTableViewController.m; sourceTree = "<group>"; };
-		AC49BE5C1B27DF7500844DE4 /* Finder-icon-120.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Finder-icon-120.jpg"; sourceTree = "<group>"; };
 		AC49BE631B27FA3B00844DE4 /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
 		AC49BE641B27FA3B00844DE4 /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
 		AC49BE681B28003900844DE4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -89,8 +69,6 @@
 		ACC6FF141B1D322700374087 /* UISampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UISampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC6FF191B1D322700374087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC6FF1A1B1D322700374087 /* UISampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISampleTests.m; sourceTree = "<group>"; };
-		ACC6FF571B1D3C6E00374087 /* dogs-667919_1280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dogs-667919_1280.jpg"; sourceTree = "<group>"; };
-		ACC6FF581B1D3C6E00374087 /* tabby-114782_1920.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tabby-114782_1920.jpg"; sourceTree = "<group>"; };
 		ACC6FF5B1B1D46E300374087 /* black_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = black_back.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,19 +178,8 @@
 		ACC6FF561B1D3C5900374087 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				AC49BE5C1B27DF7500844DE4 /* Finder-icon-120.jpg */,
-				AC49BE4E1B1EC87000844DE4 /* Finder-icon.png */,
-				AC49BE4F1B1EC87000844DE4 /* tab-icon1.png */,
-				AC49BE3C1B1EA91100844DE4 /* half-star.png */,
-				AC49BE3D1B1EA91100844DE4 /* 2-stars.png */,
-				AC49BE3E1B1EA91100844DE4 /* 4-stars.png */,
-				AC49BE3F1B1EA91100844DE4 /* 5-stars.jpg */,
-				AC49BE411B1EA91100844DE4 /* 3-stars.png */,
-				AC49BE341B1E93FB00844DE4 /* NBA_Logo.jpg */,
 				AC49BE321B1D66A400844DE4 /* myApp.png */,
 				ACC6FF5B1B1D46E300374087 /* black_back.jpg */,
-				ACC6FF571B1D3C6E00374087 /* dogs-667919_1280.jpg */,
-				ACC6FF581B1D3C6E00374087 /* tabby-114782_1920.jpg */,
 			);
 			name = resources;
 			sourceTree = "<group>";
@@ -298,23 +265,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC49BE5D1B27DF7500844DE4 /* Finder-icon-120.jpg in Resources */,
-				AC49BE501B1EC87000844DE4 /* Finder-icon.png in Resources */,
 				AC49BE491B1EBB8B00844DE4 /* yql-ios-master in Resources */,
 				AC49BE331B1D66A400844DE4 /* myApp.png in Resources */,
-				AC49BE431B1EA91100844DE4 /* 2-stars.png in Resources */,
-				AC49BE471B1EA91100844DE4 /* 3-stars.png in Resources */,
 				AC49BE691B28003900844DE4 /* Main.storyboard in Resources */,
-				ACC6FF591B1D3C6E00374087 /* dogs-667919_1280.jpg in Resources */,
-				AC49BE441B1EA91100844DE4 /* 4-stars.png in Resources */,
-				AC49BE451B1EA91100844DE4 /* 5-stars.jpg in Resources */,
 				ACC6FF5C1B1D46E300374087 /* black_back.jpg in Resources */,
-				AC49BE351B1E93FB00844DE4 /* NBA_Logo.jpg in Resources */,
 				ACC6FF0F1B1D322700374087 /* LaunchScreen.xib in Resources */,
 				ACC6FF0C1B1D322700374087 /* Images.xcassets in Resources */,
-				ACC6FF5A1B1D3C6E00374087 /* tabby-114782_1920.jpg in Resources */,
-				AC49BE511B1EC87000844DE4 /* tab-icon1.png in Resources */,
-				AC49BE421B1EA91100844DE4 /* half-star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
